@@ -216,3 +216,17 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- AntWorld run artifacts (CLAUDE.md: never commit large run artifacts) ---
+# (gitignore has no inline comments — keep patterns on their own lines)
+# training run dirs (checkpoints live here)
+runs/
+# Weights & Biases local cache
+wandb/
+# model checkpoints
+*.pt
+# eval videos
+*.mp4
+# stray GIFs anywhere, EXCEPT the committed README demo
+*.gif
+!docs/demo.gif

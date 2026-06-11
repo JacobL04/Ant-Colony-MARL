@@ -1,0 +1,21 @@
+# AntWorld — multi-agent RL study of collective foraging via stigmergy.
+# Python 3.11+ (developed on 3.13).
+
+# --- world + viewer (this is all you need to run `python -m antworld.viewer`) ---
+numpy>=1.26
+scipy>=1.11          # Gaussian diffusion of the pheromone field
+pettingzoo>=1.24     # ParallelEnv contract
+gymnasium>=0.29      # observation / action spaces
+pygame>=2.5          # interactive viewer + heatmap rendering
+
+# --- learning (RL phase: train.py / eval.py) ---
+torch>=2.1           # shared-parameter MLP actor-critic (IPPO)
+
+# --- artifacts / tracking / config ---
+imageio>=2.31        # record videos
+imageio-ffmpeg>=0.4  # mp4 backend
+wandb>=0.16          # experiment metrics
+PyYAML>=6.0          # experiment configs
+
+# --- dev ---
+pytest>=7.4
